@@ -58,6 +58,36 @@
   opacity: 0.75;
 }
 
+.genre-fiction {
+  background-color: #8d4a3e;
+  background-image: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.3));
+}
+
+.genre-mystery {
+  background-color: #5b6f9a;
+  background-image: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.3));
+}
+
+.genre-scifi {
+  background-color: #4f7f8c;
+  background-image: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.3));
+}
+
+.genre-poetry {
+  background-color: #8f4166;
+  background-image: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.3));
+}
+
+.genre-children {
+  background-color: #bf8b41;
+  background-image: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.3));
+}
+
+.genre-nonfiction {
+  background-color: #75628d;
+  background-image: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.3));
+}
+
 /* Responsive card grids */
 @media (max-width: 1024px) {
   .genre-grid {

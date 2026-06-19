@@ -85,18 +85,23 @@
 /* Cover colors matching design */
 .color-green {
   background-color: #2b4c3f;
+  background-image: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.3));
 }
 .color-slate {
   background-color: #5b6f9a;
+  background-image: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.3));
 }
 .color-plum {
   background-color: #8f4166;
+  background-image: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.3));
 }
 .color-purple {
   background-color: #75628d;
+  background-image: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.3));
 }
 .color-mustard {
   background-color: #bf8b41;
+  background-image: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.3));
 }
 
 /* Badge tags */

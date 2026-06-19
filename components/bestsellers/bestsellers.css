@@ -1,5 +1,17 @@
 /* Bestsellers-specific cover colors */
-.color-teal       { background-color: #2d6a6a; }
-.color-slate-dark { background-color: #4a6580; }
-.color-gold       { background-color: #c4952a; }
-.color-brown      { background-color: #7a4f35; }
+.color-teal       {
+  background-color: #2d6a6a;
+  background-image: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.3));
+}
+.color-slate-dark {
+  background-color: #4a6580;
+  background-image: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.3));
+}
+.color-gold       {
+  background-color: #c4952a;
+  background-image: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.3));
+}
+.color-brown      {
+  background-color: #7a4f35;
+  background-image: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.3));
+}
