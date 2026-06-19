@@ -83,5 +83,43 @@
       "priceOriginal": null,
       "rating": "4.5"
     }
+  ],
+  "newArrivals": [
+    {
+      "title": "Salt & Other Small Gods",
+      "author": "Imani Okafor",
+      "coverColor": "color-plum",
+      "tag": "new",
+      "priceSale": "$13.00",
+      "priceOriginal": null,
+      "rating": "4.8"
+    },
+    {
+      "title": "Threads of the Void",
+      "author": "Kai Tanaka",
+      "coverColor": "color-slate",
+      "tag": "new",
+      "priceSale": "$20.50",
+      "priceOriginal": null,
+      "rating": "4.6"
+    },
+    {
+      "title": "The Button Thief",
+      "author": "Marco Diaz",
+      "coverColor": "color-mustard",
+      "tag": "new",
+      "priceSale": "$10.99",
+      "priceOriginal": null,
+      "rating": "4.7"
+    },
+    {
+      "title": "Everything the River Took",
+      "author": "Ada Fenwick",
+      "coverColor": "color-brown",
+      "tag": "bestseller",
+      "priceSale": "$18.75",
+      "priceOriginal": null,
+      "rating": "4.6"
+    }
   ]
 }

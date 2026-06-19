@@ -56,3 +56,199 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+/* ==========================================================================
+   Shared Book Card & Grid Layout System (DRY Component Architecture)
+   ========================================================================== */
+
+.featured-section {
+  margin: 48px auto;
+}
+
+.featured-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 24px;
+}
+
+.section-subtitle {
+  font-family: var(--font-headings);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: #bf8b41;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.section-title {
+  font-family: var(--font-headings);
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--color-text-main);
+}
+
+.view-all-link {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-rust);
+  transition: var(--transition-smooth);
+  border-bottom: 1.5px solid transparent;
+  padding-bottom: 2px;
+}
+
+.view-all-link:hover {
+  border-color: var(--color-rust);
+}
+
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.book-card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  cursor: pointer;
+}
+
+/* Book Cover */
+.book-cover-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 145%;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 12px rgba(43, 76, 63, 0.12);
+  transition: var(--transition-smooth);
+}
+
+.book-card:hover .book-cover-wrapper {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 12px 28px rgba(43, 76, 63, 0.2);
+}
+
+.book-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 14px;
+  color: var(--color-white);
+}
+
+/* Badge tags */
+.cover-tag {
+  position: absolute;
+  top: 8px;
+  font-size: 0.55rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  padding: 3px 7px;
+  border-radius: var(--radius-sm);
+  text-transform: uppercase;
+}
+
+.cover-tag.tag-bestseller {
+  left: 8px;
+  background-color: #d08e3b;
+  color: #2a2621;
+}
+
+.cover-tag.tag-new {
+  right: 8px;
+  background-color: #fff;
+  color: #000;
+}
+
+/* Title + author stacked at bottom of cover */
+.cover-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.cover-title {
+  font-family: var(--font-headings);
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.cover-author {
+  font-size: 0.7rem;
+  opacity: 0.75;
+  font-style: italic;
+}
+
+/* Below-cover metadata */
+.book-title {
+  font-family: var(--font-headings);
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 2px;
+  color: var(--color-text-main);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.book-author {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  font-style: italic;
+  margin-bottom: 8px;
+}
+
+.book-pricing {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.price-sale {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-rust);
+}
+
+.price-original {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  text-decoration: line-through;
+}
+
+.book-rating {
+  font-size: 0.75rem;
+  color: var(--color-text-main);
+  font-weight: 600;
+  margin-left: auto;
+}
+
+.book-rating .star-icon {
+  color: var(--color-yellow);
+  margin-right: 2px;
+}
+
+/* Responsive grid widths */
+@media (max-width: 1024px) {
+  .books-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .books-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
