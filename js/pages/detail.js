@@ -46,7 +46,7 @@ async function loadBookData() {
   
   if (titleParam) {
     currentBook = allBooks.find(
-      (b) => b.title.toLowerCase() === decodeURIComponent(titleParam).toLowerCase()
+      (b) => b.title.toLowerCase() === titleParam.toLowerCase()
     );
   }
   
