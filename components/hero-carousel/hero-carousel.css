@@ -70,6 +70,7 @@
 }
 
 .slide-btn {
+  display: inline-block;
   background-color: var(--color-yellow);
   color: var(--color-text-main);
   font-weight: 600;
@@ -77,6 +78,7 @@
   padding: 12px 28px;
   border-radius: var(--radius-pill);
   transition: var(--transition-smooth);
+  text-decoration: none;
 }
 
 .slide-btn:hover {
