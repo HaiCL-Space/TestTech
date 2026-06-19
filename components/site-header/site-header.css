@@ -1,7 +1,9 @@
 .header-container {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
+  gap: 24px;
   padding: 16px 24px;
   max-width: 1200px;
   margin: 0 auto;
@@ -34,6 +36,7 @@
 .logo-text {
   color: black;
   letter-spacing: -0.5px;
+  white-space: nowrap;
 }
 
 .header-nav {
@@ -48,6 +51,7 @@
   transition: var(--transition-smooth);
   position: relative;
   padding: 4px 0;
+  white-space: nowrap;
 }
 
 .nav-link:hover,
@@ -139,7 +143,7 @@
 }
 
 /* Responsive styling */
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   .header-nav {
     display: none;
   }
