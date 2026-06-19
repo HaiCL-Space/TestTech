@@ -78,19 +78,23 @@ export function init(element) {
   signinForm.addEventListener("submit", (e) => {
     e.preventDefault();
     const email = overlay.querySelector("#signin-email").value;
+    localStorage.setItem("is_logged_in", "true");
     alert(`Successfully signed in as: ${email}`);
     closeModal();
     // Reset form
     signinForm.reset();
+    window.dispatchEvent(new CustomEvent("user-logged-in"));
   });
 
   registerForm.addEventListener("submit", (e) => {
     e.preventDefault();
     const email = overlay.querySelector("#register-email").value;
+    localStorage.setItem("is_logged_in", "true");
     alert(`Successfully created account for: ${email}`);
     closeModal();
     // Reset form
     registerForm.reset();
+    window.dispatchEvent(new CustomEvent("user-logged-in"));
   });
 
   // Global window event to trigger modal

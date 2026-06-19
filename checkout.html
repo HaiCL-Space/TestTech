@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Bag - Pages &amp; Co. Bookstore</title>
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/pages/checkout.css" />
+  </head>
+  <body>
+    <!-- Header Mount Point -->
+    <header id="header-root"></header>
+
+    <!-- Main Content Area -->
+    <main class="checkout-page-main container">
+      <!-- Breadcrumbs -->
+      <nav class="breadcrumbs">
+        <a href="./index.html">Home</a> <span>/</span>
+        <span class="current">Bag</span>
+      </nav>
+
+      <!-- Page Title -->
+      <h1 class="checkout-title">Your bag</h1>
+
+      <!-- Checkout Container -->
+      <div class="checkout-layout" id="checkout-layout">
+        <!-- Left Column: Bag Items -->
+        <div class="checkout-left-col">
+          <!-- Dynamically populated list of bag items -->
+          <div class="bag-items-list" id="bag-items-list"></div>
+
+          <!-- Empty State (initially hidden if items exist) -->
+          <div class="empty-bag-state" id="empty-bag-state" style="display: none;">
+            <div class="empty-icon-wrapper">
+              <svg class="empty-icon" viewBox="0 0 24 24" width="48" height="48">
+                <path
+                  fill="currentColor"
+                  d="M17,18A2,2 0 0,1 19,20A2,2 0 0,1 17,22C15.89,22 15,21.1 15,20C15,18.89 15.89,18 17,18M1,2H4.27L5.21,4H20A1,1 0 0,1 21,5C21,5.17 20.95,5.34 20.88,5.5L17.3,11.97C16.96,12.58 16.3,13 15.55,13H8.1L7.2,14.63L7.17,14.75A0.25,0.25 0 0,0 7.42,15H19V17H7A2,2 0 0,1 5,15C5,14.65 5.09,14.32 5.24,14.04L6.6,11.59L3,4H1V2M7,18A2,2 0 0,1 9,20A2,2 0 0,1 7,22C5.89,22 5,21.1 5,20C5,18.89 5.89,18 7,18M16,11L18.78,6H6.14L8.5,11H16Z"
+                />
+              </svg>
+            </div>
+            <h2>Your bag is empty</h2>
+            <p>Explore our curated collections to find your next great read.</p>
+            <a href="./list.html" class="btn-shop-all">Shop All</a>
+          </div>
+        </div>
+
+        <!-- Right Column: Order Summary -->
+        <div class="checkout-right-col" id="summary-sidebar">
+          <div class="order-summary-card">
+            <h2>Order summary</h2>
+            <div class="summary-row">
+              <span class="summary-label" id="subtotal-label">Subtotal (0 items)</span>
+              <span class="summary-value" id="subtotal-value">$0.00</span>
+            </div>
+            <div class="summary-row">
+              <span class="summary-label">Shipping</span>
+              <span class="summary-value color-free" id="shipping-value">Free</span>
+            </div>
+            <div class="summary-divider"></div>
+            <div class="summary-row total-row">
+              <span class="summary-label">Total</span>
+              <span class="summary-value" id="total-value">$0.00</span>
+            </div>
+            <button class="btn-checkout" id="checkout-btn">Checkout</button>
+            <p class="checkout-note">You'll be asked to sign in to complete your order</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer Mount Point -->
+    <footer id="footer-root"></footer>
+
+    <!-- Application Script -->
+    <script type="module" src="./js/pages/checkout.js"></script>
+  </body>
+</html>

@@ -1,4 +1,5 @@
 import { loadComponent } from "../../js/utils/loader.js";
+import { getBagCount } from "../../js/utils/bag.js";
 
 export function init(element) {
   const signInBtn = element.querySelector(".btn-signin");
@@ -10,12 +11,17 @@ export function init(element) {
 
   const bagBadge = element.querySelector(".bag-count");
   if (bagBadge) {
-    let count = 0;
+    bagBadge.textContent = getBagCount();
 
-    window.addEventListener("bag-updated", (event) => {
-      const delta = event.detail?.count || 1;
-      count += delta;
-      bagBadge.textContent = count;
+    window.addEventListener("bag-updated", () => {
+      bagBadge.textContent = getBagCount();
+    });
+  }
+
+  const bagBtn = element.querySelector(".btn-bag");
+  if (bagBtn) {
+    bagBtn.addEventListener("click", () => {
+      window.location.href = "./checkout.html";
     });
   }
 
@@ -24,3 +30,4 @@ export function init(element) {
     console.error("Failed to load login modal from site-header:", err);
   });
 }
+

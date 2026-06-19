@@ -1,5 +1,6 @@
 import { loadComponent } from "../utils/loader.js";
 import { buildCard } from "../utils/book-card.js";
+import { addToBag } from "../utils/bag.js";
 
 // DOM Elements
 const breadcrumbTitle = document.getElementById("breadcrumb-title");
@@ -155,8 +156,10 @@ function setupActions() {
 
   // Add to Bag Click
   addToBagBtn.addEventListener("click", () => {
-    // Dispatch bag counter update event (handled by site-header)
-    window.dispatchEvent(new CustomEvent("bag-updated", { detail: { count: 1 } }));
+    // Add current book to the bag (persisted in localStorage and dispatches sync event)
+    if (currentBook) {
+      addToBag(currentBook);
+    }
     
     // Visual feedback on button
     const oldText = addToBagBtn.textContent;
