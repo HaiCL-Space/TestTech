@@ -18,7 +18,7 @@ export function buildCard(book) {
     ? `<span class="price-original">${book.priceOriginal}</span>`
     : '';
   return `
-    <div class="book-card">
+    <a href="./detail.html?title=${encodeURIComponent(book.title)}" class="book-card">
       <div class="book-cover-wrapper">
         <div class="book-cover ${book.coverColor}">
           ${buildTagHTML(book.tag)}
@@ -35,5 +35,5 @@ export function buildCard(book) {
         ${originalHTML}
         <span class="book-rating"><span class="star-icon">&#9733;</span> ${book.rating}</span>
       </div>
-    </div>`;
+    </a>`;
 }
