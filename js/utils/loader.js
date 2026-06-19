@@ -4,7 +4,7 @@ export async function loadComponent(selector, componentName) {
 
   // 1. Load HTML Template
   const resHTML = await fetch(
-    `./components/${componentName}/${componentName}.html`,
+    `./components/${componentName}/${componentName}.html?v=${Date.now()}`,
   );
   if (!resHTML.ok)
     throw new Error(`Failed to load component HTML: ${componentName}`);
@@ -16,13 +16,13 @@ export async function loadComponent(selector, componentName) {
     const link = document.createElement("link");
     link.id = cssId;
     link.rel = "stylesheet";
-    link.href = `./components/${componentName}/${componentName}.css`;
+    link.href = `./components/${componentName}/${componentName}.css?v=${Date.now()}`;
     document.head.appendChild(link);
   }
 
   // 3. Load & Run JS Module
   try {
-    const modulePath = `../../components/${componentName}/${componentName}.js`;
+    const modulePath = `../../components/${componentName}/${componentName}.js?v=${Date.now()}`;
     const module = await import(modulePath);
     if (module.init && typeof module.init === "function") {
       module.init(container);

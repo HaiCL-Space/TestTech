@@ -1,0 +1,87 @@
+{
+  "featuredPicks": [
+    {
+      "title": "The Lighthouse Keeper",
+      "author": "Mara Ellison",
+      "coverColor": "color-green",
+      "tag": "bestseller",
+      "priceSale": "$18.00",
+      "priceOriginal": "$24.00",
+      "rating": "4.8"
+    },
+    {
+      "title": "Ashes in the Archive",
+      "author": "J.P. Crane",
+      "coverColor": "color-slate",
+      "tag": null,
+      "priceSale": "$15.50",
+      "priceOriginal": null,
+      "rating": "4.4"
+    },
+    {
+      "title": "Salt & Other Small Gods",
+      "author": "Imam Okafor",
+      "coverColor": "color-plum",
+      "tag": "new",
+      "priceSale": "$13.00",
+      "priceOriginal": null,
+      "rating": "4.0"
+    },
+    {
+      "title": "A House of Borrowed Light",
+      "author": "Sofia Marchetti",
+      "coverColor": "color-purple",
+      "tag": null,
+      "priceSale": "$17.25",
+      "priceOriginal": "$22.00",
+      "rating": "4.5"
+    },
+    {
+      "title": "Everything the River Took",
+      "author": "Aja Fairwick",
+      "coverColor": "color-mustard",
+      "tag": "bestseller",
+      "priceSale": "$18.75",
+      "priceOriginal": null,
+      "rating": "4.8"
+    }
+  ],
+  "bestsellers": [
+    {
+      "title": "The Cartographer's Daughter",
+      "author": "Lena Hartwell",
+      "coverColor": "color-teal",
+      "tag": "bestseller",
+      "priceSale": "$14.99",
+      "priceOriginal": "$20.00",
+      "rating": "4.7"
+    },
+    {
+      "title": "What the River Knows",
+      "author": "Theo Abboud",
+      "coverColor": "color-slate-dark",
+      "tag": "bestseller",
+      "priceSale": "$12.50",
+      "priceOriginal": null,
+      "rating": "4.6"
+    },
+    {
+      "title": "The Glass Meridian",
+      "author": "Priya Nair",
+      "coverColor": "color-gold",
+      "tag": "bestseller",
+      "priceSale": "$16.00",
+      "priceOriginal": "$21.50",
+      "rating": "4.9"
+    },
+    {
+      "title": "Ink & Consequence",
+      "author": "Marcus Osei",
+      "coverColor": "color-brown",
+      "tag": "bestseller",
+      "priceSale": "$11.99",
+      "priceOriginal": null,
+      "rating": "4.5"
+    }
+  ]
+}

@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     await loadComponent("#hero-carousel-root", "hero-carousel");
     await loadComponent("#genre-cards-root", "genre-cards");
     await loadComponent("#featured-picks-root", "featured-picks");
+    await loadComponent("#promo-banner-root", "promo-banner");
+    await loadComponent("#bestsellers-root", "bestsellers");
   } catch (error) {
     console.error("Error loading application components:", error);
   }

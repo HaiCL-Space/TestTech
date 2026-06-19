@@ -1,0 +1,66 @@
+.promo-banner {
+  margin: 0 auto 48px;
+  padding: 0 24px;
+}
+
+.promo-banner-inner {
+  background-color: #2B4C3F;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 40px;
+  border-radius: var(--radius-lg);
+  gap: 24px;
+}
+
+.promo-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.promo-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.promo-heading {
+  font-family: var(--font-headings);
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--color-white);
+  line-height: 1.25;
+}
+
+.promo-sub {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.6;
+}
+
+.btn-promo-join {
+  background-color: #D08E3B;
+  color: #2B4C3F;
+  border-radius: var(--radius-pill);
+  padding: 12px 32px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: var(--font-body);
+  white-space: nowrap;
+  transition: var(--transition-smooth);
+  flex-shrink: 0;
+}
+
+.btn-promo-join:hover {
+  background-color: var(--color-yellow-light);
+}
+
+@media (max-width: 700px) {
+  .promo-banner-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

@@ -7,10 +7,11 @@
 }
 
 .section-subtitle {
-  font-size: 0.7rem;
+  font-family: var(--font-headings);
+  font-size: 0.85rem;
   font-weight: 800;
-  letter-spacing: 1.5px;
-  color: #a34e36;
+  letter-spacing: 2px;
+  color: var(--color-rust);
   text-transform: uppercase;
   margin-bottom: 8px;
 }
