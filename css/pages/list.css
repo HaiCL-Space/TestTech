@@ -88,40 +88,95 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   color: var(--color-text-muted);
 }
 
-.select-container {
+.custom-select-container {
   position: relative;
+  user-select: none;
 }
 
-.sort-select {
-  appearance: none;
+.custom-select {
+  position: relative;
   background-color: var(--color-white);
   border: 1px solid #DCD5C6;
   border-radius: var(--radius-pill);
-  padding: 8px 36px 8px 16px;
   font-family: var(--font-body);
   font-size: 0.85rem;
   font-weight: 600;
   color: var(--color-text-main);
   cursor: pointer;
-  outline: none;
+  min-width: 180px;
+  transition: var(--transition-smooth);
 }
 
-.select-container::after {
-  content: "";
-  position: absolute;
-  right: 14px;
-  top: 50%;
-  transform: translateY(-50%);
+.custom-select:hover {
+  border-color: var(--color-rust);
+}
+
+.custom-select-trigger {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 18px;
+  gap: 12px;
+}
+
+.custom-arrow {
   width: 0;
   height: 0;
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
   border-top: 4px solid var(--color-text-main);
-  pointer-events: none;
+  transition: transform 0.2s ease;
+}
+
+.custom-select.open .custom-arrow {
+  transform: rotate(180deg);
+}
+
+.custom-options-container {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  background-color: var(--color-white);
+  border: 1px solid #EAE5D9;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px);
+  transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1), transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.25s;
+  z-index: 99;
+  box-shadow: 0 10px 30px rgba(43, 76, 63, 0.12);
+  padding: 4px 0;
+}
+
+.custom-select.open .custom-options-container {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.custom-option {
+  padding: 8px 18px;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  transition: var(--transition-smooth);
+  font-size: 0.85rem;
+}
+
+.custom-option:hover {
+  background-color: #F4F0E6;
+  color: var(--color-text-main);
+}
+
+.custom-option.active {
+  background-color: rgba(163, 78, 54, 0.08);
+  color: var(--color-rust);
+  font-weight: 600;
 }
 
 .list-grid-margin {

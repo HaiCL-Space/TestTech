@@ -37,14 +37,20 @@
           <button class="filter-pill" data-filter="biography">Biography</button>
         </div>
         <div class="sort-wrapper">
-          <label for="sort-select">Sort by</label>
-          <div class="select-container">
-            <select id="sort-select" class="sort-select">
-              <option value="featured">Featured</option>
-              <option value="price-low">Price: Low to High</option>
-              <option value="price-high">Price: High to Low</option>
-              <option value="newest">Newest</option>
-            </select>
+          <span>Sort by</span>
+          <div class="custom-select-container">
+            <div class="custom-select" id="sort-select">
+              <div class="custom-select-trigger">
+                <span id="sort-trigger-label">Featured</span>
+                <span class="custom-arrow"></span>
+              </div>
+              <div class="custom-options-container">
+                <div class="custom-option active" data-value="featured">Featured</div>
+                <div class="custom-option" data-value="price-low">Price: Low to High</div>
+                <div class="custom-option" data-value="price-high">Price: High to Low</div>
+                <div class="custom-option" data-value="newest">Newest</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

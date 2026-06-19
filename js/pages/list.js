@@ -63,13 +63,43 @@ function setupFilters() {
 }
 
 function setupSort() {
-  const select = document.getElementById("sort-select");
-  if (select) {
-    select.addEventListener("change", (e) => {
-      currentSort = e.target.value;
+  const selectEl = document.getElementById("sort-select");
+  if (!selectEl) return;
+
+  const trigger = selectEl.querySelector(".custom-select-trigger");
+  const triggerLabel = selectEl.querySelector("#sort-trigger-label");
+  const options = selectEl.querySelectorAll(".custom-option");
+
+  // Toggle dropdown open class
+  trigger.addEventListener("click", (e) => {
+    e.stopPropagation();
+    selectEl.classList.toggle("open");
+  });
+
+  // Handle option click
+  options.forEach(opt => {
+    opt.addEventListener("click", () => {
+      // Remove active class from all options
+      options.forEach(o => o.classList.remove("active"));
+      // Set active class
+      opt.classList.add("active");
+      
+      // Update trigger label
+      triggerLabel.textContent = opt.textContent;
+      
+      // Update currentSort and render
+      currentSort = opt.dataset.value;
       renderBooks();
+      
+      // Close dropdown
+      selectEl.classList.remove("open");
     });
-  }
+  });
+
+  // Close dropdown when clicking outside
+  document.addEventListener("click", () => {
+    selectEl.classList.remove("open");
+  });
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
@@ -108,7 +138,16 @@ document.addEventListener("DOMContentLoaded", async () => {
       currentSort = sortParam;
       const select = document.getElementById("sort-select");
       if (select) {
-        select.value = sortParam;
+        const options = select.querySelectorAll(".custom-option");
+        const triggerLabel = select.querySelector("#sort-trigger-label");
+        options.forEach(opt => {
+          if (opt.dataset.value === sortParam) {
+            opt.classList.add("active");
+            if (triggerLabel) triggerLabel.textContent = opt.textContent;
+          } else {
+            opt.classList.remove("active");
+          }
+        });
       }
     }
 
