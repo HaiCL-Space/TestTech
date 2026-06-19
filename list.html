@@ -25,35 +25,85 @@
       </div>
 
       <!-- Filters & Sort -->
-      <div class="controls-bar">
-        <div class="filters" id="filter-container">
-          <button class="filter-pill active" data-filter="all">All</button>
-          <button class="filter-pill" data-filter="fiction">Fiction</button>
-          <button class="filter-pill" data-filter="mystery">Mystery</button>
-          <button class="filter-pill" data-filter="sci-fi">Sci-Fi</button>
-          <button class="filter-pill" data-filter="non-fiction">Non-fiction</button>
-          <button class="filter-pill" data-filter="poetry">Poetry</button>
-          <button class="filter-pill" data-filter="children">Children</button>
-          <button class="filter-pill" data-filter="biography">Biography</button>
+      <div class="mobile-filters-bar">
+        <button class="mobile-filters-trigger" id="mobile-filters-btn">
+          <svg
+            class="filter-icon"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="4" y1="21" x2="4" y2="14"></line>
+            <line x1="4" y1="10" x2="4" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="12"></line>
+            <line x1="12" y1="8" x2="12" y2="3"></line>
+            <line x1="20" y1="21" x2="20" y2="16"></line>
+            <line x1="20" y1="12" x2="20" y2="3"></line>
+            <line x1="1" y1="14" x2="7" y2="14"></line>
+            <line x1="9" y1="8" x2="15" y2="8"></line>
+            <line x1="17" y1="16" x2="23" y2="16"></line>
+          </svg>
+          Filters & Sort
+        </button>
+      </div>
+
+      <div class="controls-bar-wrapper" id="controls-drawer">
+        <div class="drawer-header">
+          <h3>Filters & Sort</h3>
+          <button
+            class="drawer-close"
+            id="drawer-close-btn"
+            aria-label="Close filters"
+          >
+            &times;
+          </button>
         </div>
-        <div class="sort-wrapper">
-          <span>Sort by</span>
-          <div class="custom-select-container">
-            <div class="custom-select" id="sort-select">
-              <div class="custom-select-trigger">
-                <span id="sort-trigger-label">Featured</span>
-                <span class="custom-arrow"></span>
-              </div>
-              <div class="custom-options-container">
-                <div class="custom-option active" data-value="featured">Featured</div>
-                <div class="custom-option" data-value="price-low">Price: Low to High</div>
-                <div class="custom-option" data-value="price-high">Price: High to Low</div>
-                <div class="custom-option" data-value="newest">Newest</div>
+        <div class="controls-bar">
+          <div class="filters" id="filter-container">
+            <button class="filter-pill active" data-filter="all">All</button>
+            <button class="filter-pill" data-filter="fiction">Fiction</button>
+            <button class="filter-pill" data-filter="mystery">Mystery</button>
+            <button class="filter-pill" data-filter="sci-fi">Sci-Fi</button>
+            <button class="filter-pill" data-filter="non-fiction">
+              Non-fiction
+            </button>
+            <button class="filter-pill" data-filter="poetry">Poetry</button>
+            <button class="filter-pill" data-filter="children">Children</button>
+            <button class="filter-pill" data-filter="biography">
+              Biography
+            </button>
+          </div>
+          <div class="sort-wrapper">
+            <span>Sort by</span>
+            <div class="custom-select-container">
+              <div class="custom-select" id="sort-select">
+                <div class="custom-select-trigger">
+                  <span id="sort-trigger-label">Featured</span>
+                  <span class="custom-arrow"></span>
+                </div>
+                <div class="custom-options-container">
+                  <div class="custom-option active" data-value="featured">
+                    Featured
+                  </div>
+                  <div class="custom-option" data-value="price-low">
+                    Price: Low to High
+                  </div>
+                  <div class="custom-option" data-value="price-high">
+                    Price: High to Low
+                  </div>
+                  <div class="custom-option" data-value="newest">Newest</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="drawer-overlay" id="drawer-overlay"></div>
 
       <!-- Books Grid -->
       <div class="books-grid list-grid-margin" id="list-grid"></div>
