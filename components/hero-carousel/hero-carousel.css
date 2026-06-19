@@ -13,29 +13,31 @@
 
 .carousel-track {
   display: flex;
-  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-  width: 300%; /* 3 slides */
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  width: 100%;
 }
 
 .carousel-slide {
-  width: 33.3333%;
+  flex: 0 0 100%;
+  width: 100%;
   padding: 72px 96px;
   color: var(--color-white);
   display: flex;
   align-items: center;
   min-height: 480px;
+  box-sizing: border-box;
 }
 
 .slide-green {
-  background-color: var(--color-green);
+  background: linear-gradient(135deg, var(--color-green) 0%, #1a3329 100%);
 }
 
 .slide-blue {
-  background-color: #2f4259;
+  background: linear-gradient(135deg, #2f4259 0%, #151e2b 100%);
 }
 
 .slide-plum {
-  background-color: #5c3246;
+  background: linear-gradient(135deg, #5c3246 0%, #2f1924 100%);
 }
 
 .slide-content {
@@ -121,24 +123,30 @@
 }
 
 .indicator-dot {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.4);
-  transition: var(--transition-smooth);
+  transition: all 0.3s ease;
   padding: 0;
+  border: none;
+  cursor: pointer;
+  outline: none;
 }
 
 .indicator-dot.active {
   background-color: var(--color-yellow);
-  width: 24px;
-  border-radius: var(--radius-pill);
+  width: 32px;
+  border-radius: 8px;
 }
 
 /* Responsive Carousel styles */
 @media (max-width: 1024px) {
   .carousel-arrow {
     display: none;
+  }
+  .carousel-indicators {
+    bottom: 16px;
   }
   .carousel-slide {
     padding: 48px 36px;

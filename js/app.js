@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     await loadComponent("#promo-banner-root",   "promo-banner");
     await loadComponent("#bestsellers-root",    "bestsellers");
     await loadComponent("#blank-cards-root",    "blank-cards");
+    await loadComponent("#footer-root",          "site-footer");
     await renderBookGrids();
   } catch (error) {
     console.error("Error loading application components:", error);
