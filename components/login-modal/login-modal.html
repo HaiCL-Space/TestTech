@@ -1,0 +1,92 @@
+<div class="login-modal-overlay" id="login-modal-overlay">
+  <div class="login-modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <!-- Close Button -->
+    <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+
+    <!-- Logo Badge -->
+    <div class="modal-badge">P</div>
+
+    <!-- Sign In View -->
+    <div class="modal-view active" id="view-signin">
+      <h2 class="modal-title" id="modal-title">Welcome back</h2>
+      <p class="modal-subtitle">Sign in to access your bag, orders and wishlist.</p>
+
+      <form id="signin-form" class="modal-form">
+        <div class="form-group">
+          <label for="signin-email">Email</label>
+          <input
+            type="email"
+            id="signin-email"
+            placeholder="you@example.com"
+            required
+            class="form-input"
+          />
+        </div>
+        <div class="form-group">
+          <label for="signin-password">Password</label>
+          <input
+            type="password"
+            id="signin-password"
+            placeholder="••••••••"
+            required
+            class="form-input"
+          />
+        </div>
+        <button type="submit" class="btn-submit">Sign in</button>
+      </form>
+
+      <div class="modal-footer">
+        New here? <button class="link-toggle" id="to-register-btn">Create an account</button>
+      </div>
+    </div>
+
+    <!-- Register View -->
+    <div class="modal-view" id="view-register">
+      <h2 class="modal-title">Create account</h2>
+      <p class="modal-subtitle">Join Pages & Co. to track orders and save your wishlist.</p>
+
+      <form id="register-form" class="modal-form">
+        <div class="form-group">
+          <label for="register-name">Full Name</label>
+          <input
+            type="text"
+            id="register-name"
+            placeholder="Jane Doe"
+            required
+            class="form-input"
+          />
+        </div>
+        <div class="form-group">
+          <label for="register-email">Email Address</label>
+          <input
+            type="email"
+            id="register-email"
+            placeholder="you@example.com"
+            required
+            class="form-input"
+          />
+        </div>
+        <div class="form-group">
+          <label for="register-password">Password</label>
+          <input
+            type="password"
+            id="register-password"
+            placeholder="••••••••"
+            required
+            class="form-input"
+          />
+        </div>
+        <button type="submit" class="btn-submit">Create account</button>
+      </form>
+
+      <div class="modal-footer">
+        Already have an account? <button class="link-toggle" id="to-signin-btn">Sign in</button>
+      </div>
+    </div>
+  </div>
+</div>
