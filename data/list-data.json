@@ -8,7 +8,13 @@
       "priceSale": "$18.00",
       "priceOriginal": "$24.00",
       "rating": "4.8",
-      "category": "fiction"
+      "category": "fiction",
+      "pages": 312,
+      "published": 2023,
+      "publisher": "Harbor & Vale",
+      "language": "English",
+      "isbn": "978-1-23456-001-2",
+      "description": "A widowed keeper and a runaway girl share a winter on a remote island, learning what it means to keep a light burning for someone else."
     },
     {
       "title": "Ashes in the Archive",
@@ -18,7 +24,13 @@
       "priceSale": "$15.50",
       "priceOriginal": null,
       "rating": "4.4",
-      "category": "mystery"
+      "category": "mystery",
+      "pages": 274,
+      "published": 2022,
+      "publisher": "Harbor & Vale",
+      "language": "English",
+      "isbn": "978-1-23456-004-3",
+      "description": "When an archivist vanishes under suspicious circumstances, a trail of fire-damaged records points to a secret dating back to the town's founding."
     },
     {
       "title": "Orbital Driftwood",
@@ -28,7 +40,13 @@
       "priceSale": "$21.00",
       "priceOriginal": null,
       "rating": "4.7",
-      "category": "sci-fi"
+      "category": "sci-fi",
+      "pages": 412,
+      "published": 2024,
+      "publisher": "Harbor & Vale",
+      "language": "English",
+      "isbn": "978-1-23456-005-0",
+      "description": "Stranded on a decommissioned space station, two engineers find a mysterious signal that challenges everything humanity knows about space travel."
     },
     {
       "title": "The Quiet Economy",
@@ -38,7 +56,13 @@
       "priceSale": "$19.99",
       "priceOriginal": null,
       "rating": "4.2",
-      "category": "non-fiction"
+      "category": "non-fiction",
+      "pages": 320,
+      "published": 2023,
+      "publisher": "Harbor & Vale",
+      "language": "English",
+      "isbn": "978-1-23456-006-7",
+      "description": "An insightful exploration of modern micro-economies and how small-scale community trade is changing the global financial landscape."
     },
     {
       "title": "Salt & Other Small Gods",
@@ -48,7 +72,13 @@
       "priceSale": "$13.00",
       "priceOriginal": null,
       "rating": "4.8",
-      "category": "poetry"
+      "category": "poetry",
+      "pages": 112,
+      "published": 2023,
+      "publisher": "Harbor & Vale",
+      "language": "English",
+      "isbn": "978-1-23456-007-4",
+      "description": "A profound collection of modern poetry dealing with roots, ancestry, migration, and the healing power of memory and the sea."
     },
     {
       "title": "Pip and the Paper Moon",
@@ -58,7 +88,13 @@
       "priceSale": "$11.50",
       "priceOriginal": null,
       "rating": "4.9",
-      "category": "children"
+      "category": "children",
+      "pages": 48,
+      "published": 2022,
+      "publisher": "Harbor & Vale",
+      "language": "English",
+      "isbn": "978-1-23456-008-1",
+      "description": "Follow Pip the mouse as he embarks on an imaginative nighttime adventure to catch a falling star using a homemade paper balloon."
     },
     {
       "title": "A House of Borrowed Light",
@@ -68,7 +104,13 @@
       "priceSale": "$17.25",
       "priceOriginal": "$22.00",
       "rating": "4.5",
-      "category": "fiction"
+      "category": "fiction",
+      "pages": 288,
+      "published": 2022,
+      "publisher": "Harbor & Vale",
+      "language": "English",
+      "isbn": "978-1-23456-002-9",
+      "description": "A historical drama set in a remote village, tracing the lives of three generations of women as they seek independence during a time of immense social change."
     },
     {
       "title": "Hands in the Soil",
@@ -78,7 +120,13 @@
       "priceSale": "$23.00",
       "priceOriginal": null,
       "rating": "4.3",
-      "category": "biography"
+      "category": "biography",
+      "pages": 380,
+      "published": 2021,
+      "publisher": "Harbor & Vale",
+      "language": "English",
+      "isbn": "978-1-23456-009-8",
+      "description": "The inspiring life story of an pioneering botanist who traveled the world cataloging rare alpine flora while breaking barriers for women in science."
     },
     {
       "title": "The Saltmarsh Murders",
@@ -88,7 +136,13 @@
       "priceSale": "$16.00",
       "priceOriginal": null,
       "rating": "4.1",
-      "category": "mystery"
+      "category": "mystery",
+      "pages": 350,
+      "published": 2020,
+      "publisher": "Harbor & Vale",
+      "language": "English",
+      "isbn": "978-1-23456-010-4",
+      "description": "A chilling classic noir mystery that takes place on the foggy marshes of eastern England, where a series of old family secrets resurface."
     },
     {
       "title": "Threads of the Void",
@@ -98,7 +152,13 @@
       "priceSale": "$20.50",
       "priceOriginal": null,
       "rating": "4.6",
-      "category": "sci-fi"
+      "category": "sci-fi",
+      "pages": 390,
+      "published": 2023,
+      "publisher": "Harbor & Vale",
+      "language": "English",
+      "isbn": "978-1-23456-011-1",
+      "description": "An epic cyberpunk story exploring AI consciousness and human modification in a city built entirely on reclaimed sea platforms."
     },
     {
       "title": "The Cartographer's Daughter",
@@ -108,7 +168,13 @@
       "priceSale": "$14.99",
       "priceOriginal": "$20.00",
       "rating": "4.7",
-      "category": "fiction"
+      "category": "fiction",
+      "pages": 320,
+      "published": 2021,
+      "publisher": "Harbor & Vale",
+      "language": "English",
+      "isbn": "978-1-23456-012-8",
+      "description": "Armed with only her father's unfinished maps, a young cartographer sets out to find an uncharted island rumored to hold ancient relics."
     },
     {
       "title": "What the River Knows",
@@ -118,7 +184,13 @@
       "priceSale": "$12.50",
       "priceOriginal": null,
       "rating": "4.6",
-      "category": "mystery"
+      "category": "mystery",
+      "pages": 304,
+      "published": 2023,
+      "publisher": "Harbor & Vale",
+      "language": "English",
+      "isbn": "978-1-23456-013-5",
+      "description": "When a local bridge collapse reveals artifacts from a forgotten era, a young archaeologist finds herself entangled in a web of historical deceit."
     },
     {
       "title": "Ink & Consequence",
@@ -128,7 +200,13 @@
       "priceSale": "$11.99",
       "priceOriginal": null,
       "rating": "4.5",
-      "category": "fiction"
+      "category": "fiction",
+      "pages": 260,
+      "published": 2022,
+      "publisher": "Harbor & Vale",
+      "language": "English",
+      "isbn": "978-1-23456-014-2",
+      "description": "An intimate, beautifully written story about the friendship between a retired printing press operator and a young aspiring writer."
     },
     {
       "title": "The Glass Meridian",
@@ -138,7 +216,29 @@
       "priceSale": "$16.00",
       "priceOriginal": "$21.50",
       "rating": "4.9",
-      "category": "sci-fi"
+      "category": "sci-fi",
+      "pages": 448,
+      "published": 2023,
+      "publisher": "Harbor & Vale",
+      "language": "English",
+      "isbn": "978-1-23456-015-9",
+      "description": "A sweeping science fiction tale concerning a climate scientist who discovers a rift in time along the equator, and must fight to save the future."
+    },
+    {
+      "title": "Everything the River Took",
+      "author": "Ada Fenwick",
+      "coverColor": "color-brown",
+      "tag": "bestseller",
+      "priceSale": "$18.75",
+      "priceOriginal": null,
+      "rating": "4.8",
+      "category": "fiction",
+      "pages": 340,
+      "published": 2021,
+      "publisher": "Harbor & Vale",
+      "language": "English",
+      "isbn": "978-1-23456-003-6",
+      "description": "A gripping story of family secrets, lost heritage, and a mysterious river that knows the truth, set against the backdrop of rural England."
     }
   ]
 }
