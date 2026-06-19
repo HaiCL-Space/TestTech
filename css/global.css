@@ -1,60 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap");
 
 :root {
-    --color-bg: #F4F0E6;
-    --color-green: #2B4C3F;
-    --color-green-light: #3D6151;
-    --color-yellow: #D08E3B;
-    --color-yellow-light: #E29F4D;
-    --color-rust: #a34e36;
-    --color-text-main: #2A2621;
-    --color-text-muted: #6B655B;
-    --color-white: #FFFFFF;
-    --color-black: #000000;
-    
-    --font-headings: 'Outfit', sans-serif;
-    --font-body: 'Plus Jakarta Sans', sans-serif;
-    
-    --radius-sm: 4px;
-    --radius-md: 8px;
-    --radius-lg: 16px;
-    --radius-pill: 9999px;
-    
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --color-bg: #f4f0e6;
+  --color-green: #2b4c3f;
+  --color-green-light: #3d6151;
+  --color-yellow: #d08e3b;
+  --color-yellow-light: #e29f4d;
+  --color-rust: #a34e36;
+  --color-text-main: #2a2621;
+  --color-text-muted: #6b655b;
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --font-headings: "Outfit", sans-serif;
+  --font-body: "Plus Jakarta Sans", sans-serif;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-pill: 9999px;
+
+  --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: var(--color-bg);
-    color: var(--color-text-main);
-    font-family: var(--font-body);
-    line-height: 1.5;
-    overflow-x: hidden;
+  background-color: var(--color-bg);
+  color: var(--color-text-main);
+  font-family: var(--font-body);
+  line-height: 1.5;
+  overflow-x: hidden;
 }
 
 .container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 24px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
 button {
-    font-family: var(--font-body);
-    cursor: pointer;
-    border: none;
-    outline: none;
-    background: none;
+  font-family: var(--font-body);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 /* ==========================================================================
@@ -114,7 +114,7 @@ a {
   align-items: stretch;
   cursor: pointer;
   background-color: var(--color-white);
-  border: 1px solid #EAE5D9;
+  border: 1px solid #eae5d9;
   border-radius: var(--radius-sm);
   padding: 12px;
   box-shadow: 0 2px 8px rgba(43, 76, 63, 0.04);
@@ -124,7 +124,7 @@ a {
 .book-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 12px 28px rgba(43, 76, 63, 0.15);
-  border-color: #DCD5C6;
+  border-color: #dcd5c6;
 }
 
 /* Book Cover */
@@ -264,47 +264,84 @@ a {
   }
 }
 
-/* ==========================================================================
-   Global Book Cover Gradient Colors
-   ========================================================================== */
+/* Global Book Cover Gradient Colors */
 .color-green {
   background-color: #2b4c3f;
-  background-image: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.3));
+  background-image: linear-gradient(
+    135deg,
+    transparent,
+    rgba(255, 255, 255, 0.3)
+  );
 }
 .color-slate {
   background-color: #5b6f9a;
-  background-image: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.3));
+  background-image: linear-gradient(
+    135deg,
+    transparent,
+    rgba(255, 255, 255, 0.3)
+  );
 }
 .color-plum {
   background-color: #8f4166;
-  background-image: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.3));
+  background-image: linear-gradient(
+    135deg,
+    transparent,
+    rgba(255, 255, 255, 0.3)
+  );
 }
 .color-purple {
   background-color: #75628d;
-  background-image: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.3));
+  background-image: linear-gradient(
+    135deg,
+    transparent,
+    rgba(255, 255, 255, 0.3)
+  );
 }
 .color-mustard {
   background-color: #bf8b41;
-  background-image: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.3));
+  background-image: linear-gradient(
+    135deg,
+    transparent,
+    rgba(255, 255, 255, 0.3)
+  );
 }
 .color-teal {
   background-color: #2d6a6a;
-  background-image: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.3));
+  background-image: linear-gradient(
+    135deg,
+    transparent,
+    rgba(255, 255, 255, 0.3)
+  );
 }
 .color-slate-dark {
   background-color: #4a6580;
-  background-image: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.3));
+  background-image: linear-gradient(
+    135deg,
+    transparent,
+    rgba(255, 255, 255, 0.3)
+  );
 }
 .color-gold {
   background-color: #c4952a;
-  background-image: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.3));
+  background-image: linear-gradient(
+    135deg,
+    transparent,
+    rgba(255, 255, 255, 0.3)
+  );
 }
 .color-brown {
   background-color: #7a4f35;
-  background-image: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.3));
+  background-image: linear-gradient(
+    135deg,
+    transparent,
+    rgba(255, 255, 255, 0.3)
+  );
 }
 .color-rust {
   background-color: var(--color-rust);
-  background-image: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.3));
+  background-image: linear-gradient(
+    135deg,
+    transparent,
+    rgba(255, 255, 255, 0.3)
+  );
 }
-
